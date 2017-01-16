@@ -39,5 +39,11 @@ end
 
 gem "active_model_serializers"
 
+# gem aftership
+gem "aftership", "~> 4.3.1"
+
+# install figaro to initiate the third-party API
+gem "figaro"
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
