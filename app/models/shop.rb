@@ -1,3 +1,3 @@
 class Shop < ApplicationRecord
-  belongs_to :employee
+  belongs_to :owner
 end
