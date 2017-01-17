@@ -10,23 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170115060636) do
+ActiveRecord::Schema.define(version: 20170117054355) do
 
-  create_table "employees", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string   "employee_name"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+  create_table "owners", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "owner_name"
+    t.string   "owner_phone_number"
+    t.string   "owner_email_address"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
   end
 
   create_table "shops", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "employee_id"
+    t.integer  "owner_id"
+    t.string   "shop_name"
     t.string   "shop_address"
     t.integer  "shop_postcode"
     t.string   "shop_phone_number"
-    t.datetime "created_at",        null: false
-    t.datetime "updated_at",        null: false
-    t.index ["employee_id"], name: "index_shops_on_employee_id", using: :btree
+    t.string   "shop_other_phone_number"
+    t.string   "shop_fax_number"
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+    t.index ["owner_id"], name: "index_shops_on_owner_id", using: :btree
   end
 
-  add_foreign_key "shops", "employees"
+  add_foreign_key "shops", "owners"
 end

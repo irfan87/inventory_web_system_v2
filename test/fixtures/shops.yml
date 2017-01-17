@@ -1,13 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  employee_id: one
+  owner: one
+  shop_name: MyString
   shop_address: MyString
   shop_postcode: 1
   shop_phone_number: MyString
+  shop_other_phone_number: MyString
+  shop_fax_number: MyString
 
 two:
-  employee_id: two
+  owner: two
+  shop_name: MyString
   shop_address: MyString
   shop_postcode: 1
   shop_phone_number: MyString
+  shop_other_phone_number: MyString
+  shop_fax_number: MyString
