@@ -1,5 +1,5 @@
 class Api::V1::OwnersController < ApplicationController
-	before_filter :find_owner_by_id, only: [:show, :update, :destroy]
+	before_action :find_owner_by_id, only: [:show, :update, :destroy]
 
 	def index
 		@owners = Owner.all
