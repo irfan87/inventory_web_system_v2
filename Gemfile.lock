@@ -46,10 +46,12 @@ GEM
     aftership (4.3.1)
       httpclient (~> 2.7.1)
     arel (7.1.4)
+    bcrypt (3.1.11)
     builder (3.2.3)
     byebug (9.0.6)
     concurrent-ruby (1.0.4)
     erubis (2.7.0)
+    ffaker (2.4.0)
     ffi (1.9.17)
     figaro (1.1.1)
       thor (~> 0.14)
@@ -156,7 +158,9 @@ PLATFORMS
 DEPENDENCIES
   active_model_serializers
   aftership (~> 4.3.1)
+  bcrypt (~> 3.1.7)
   byebug
+  ffaker
   figaro
   listen (~> 3.0.5)
   mysql2 (>= 0.3.18, < 0.5)
