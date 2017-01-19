@@ -45,5 +45,9 @@ gem "aftership", "~> 4.3.1"
 # install figaro to initiate the third-party API
 gem "figaro"
 
+# redis gem
+gem 'redis-rails'
+gem 'redis-namespace'
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

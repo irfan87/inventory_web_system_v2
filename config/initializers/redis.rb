@@ -1,0 +1,1 @@
+$redis = Redis::Namespace.new("inventory_web_system_v2", redis: Redis.new)
