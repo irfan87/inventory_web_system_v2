@@ -37,6 +37,9 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
+# devise token for api
+gem 'devise_token_auth'
+
 gem "active_model_serializers"
 
 # gem aftership
